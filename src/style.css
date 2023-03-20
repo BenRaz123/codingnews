@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: 'titleFont';
+  src: url('Hubot-Sans.woff2');
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('Mona-Sans.woff2') format('woff2 supports variations'),
+    url('Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+}
+
+* {
+  font-family: 'mona sans';
+  margin:0rem;
+  text-rendering: geometricPrecision;
+}
+
+p {
+  text-align: justify;
+}
+
+h1 {
+  font-family: 'space mono';
+  font-weight:800;
+  font-size:3rem;
+  line-height: 3.25rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.2rem;
+  color: #0d3;
+}
+
+h3 {
+  font-weight: 400;
+  color: gray
+}
+
+header {
+  display:flex;
+  width:100vw;
+  margin:0rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article {
+  margin-left: 10rem;
+  margin-right: 15rem;
+  margin-bottom: 2rem;;
+  display:flex;
+  flex-direction: column;
+  gap:1rem;
+  line-height: 2.25rem;
+  font-size: 1.5rem;
+  /* font-feature-settings: 'salt'; */
+
+}
+
+#title {
+  display: flex;
+  flex-direction:column;
+  gap:1rem;
+}
+.x-button {
+  font-style: normal;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#warning {
+  gap:1rem;
+  display:flex;
+  color:Red;
+  background-color:yellow;
+  justify-content: center;
+  padding:1rem;
+  font-weight:500;
+}
+
+img, svg { 
+  width: 26.7vw;
+  max-width: 20rem;
+}
+
+@media screen and (max-width:600px) {
+  header {
+    flex-direction:column-reverse;
+    margin: 0px;
+    padding:0px;
+    justify-content: center;
+    gap:-100px;
+  }
+  img {width:100vw; margin-bottom:2rem}
+}
+
+#title {
+  margin-left: 2rem;
+  margin-right: 4rem;
+}
+
+body {
+  background-color:white;
+  color:black;
+  overflow-x:hidden; 
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #112;
+    color: white;
+  } 
+}
+
+@media screen and (min-width:1700px) {
+  article {
+    margin-left:30rem;
+    margin-right:35rem;
+    font-size: 1.75rem;
+    line-height: 2.55rem;
+  }
+  h1 { 
+    font-size: 4rem;
+  }
+  h3 {
+    font-size:2rem
+  }
+}
